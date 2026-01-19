@@ -24,7 +24,7 @@ body {
   width: 750px;
   height: 750px;
 
-  background-image: url("logo-cardiominas.png");
+  background-image: url("logocoracao.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -145,3 +145,4 @@ li {
     height: 380px;
   }
 }
+
