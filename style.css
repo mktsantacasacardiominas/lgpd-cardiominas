@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======================
+   CABEÇALHO
+====================== */
+.header {
+  background-color: #c4161c; /* vermelho institucional */
+  color: #ffffff;
+  padding: 24px 32px;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.header-text p {
+  font-size: 15px;
+}
+
+/* Logo topo */
+.logo-topo {
+  height: 60px;
+  max-width: 220px;
+}
+
+/* ======================
+   CONTEÚDO
+====================== */
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Marca d’água */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("logo-cardiominas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px;
+  opacity: 0.04; /* bem sutil */
+  pointer-events: none;
+  z-index: 0;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: #c4161c;
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.contact {
+  margin-top: 8px;
+}
+
+/* ======================
+   RODAPÉ
+====================== */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 20px;
+}
+
+/* ======================
+   RESPONSIVO
+====================== */
+@media (max-width: 600px) {
+  .container {
+    margin: 16px;
+    padding: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .logo-topo {
+    height: 45px;
+  }
+}
